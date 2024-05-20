@@ -1,0 +1,37 @@
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.game .btn{
+    height: 200px;
+    width: 200px;
+    border: 7px solid black;
+    margin :2rem;
+    border-radius: 20%;
+
+    text-align: center;
+}
+.game {
+   display: flex;
+   justify-content: center;
+
+}
+.red{
+    background-color: #d95980;
+}
+.green{
+    background-color: #63aac0;
+}
+
+.orange{
+    background-color: #f99b45;
+}
+
+.blue{
+    background-color: #899ff9;
+}
+
+
+
