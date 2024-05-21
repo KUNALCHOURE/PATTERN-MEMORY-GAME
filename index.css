@@ -18,6 +18,10 @@ h2{
    justify-content: center;
 
 }
+
+.flash{
+    background-color: rgb(14, 1, 1);
+}
 .red{
     background-color: #d95980;
 }
