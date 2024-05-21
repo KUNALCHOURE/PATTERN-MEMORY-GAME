@@ -19,9 +19,6 @@ h2{
 
 }
 
-.flash{
-    background-color: rgb(14, 1, 1);
-}
 .red{
     background-color: #d95980;
 }
@@ -32,10 +29,19 @@ h2{
 .orange{
     background-color: #f99b45;
 }
-
 .blue{
     background-color: #899ff9;
 }
+
+.flash
+{
+    background-color: white;
+}
+.userflash{
+    background-color: green;
+}
+
+
 
 
 
