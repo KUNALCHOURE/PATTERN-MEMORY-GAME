@@ -16,7 +16,7 @@ body.addEventListener("keypress", function(){
 })
 
 function levelup(){
-    body.style.backgroundColor="white";
+    body.style.backgroundColor="black";
     userseq=[];
  level+=1;
  h2.innerText="LEVEL"+level;
