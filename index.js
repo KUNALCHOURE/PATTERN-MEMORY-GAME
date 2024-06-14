@@ -1,5 +1,8 @@
 let body=document.querySelector("body");
 let h2=document.querySelector("h2");
+let highscore = localStorage.getItem('simonHighScore') || 0;
+let h22 = document.getElementById("hs");
+h22.innerText = `HIGH SCORE: ${highscore}`;
 let started=false;
 let btns=["red","orange","green","blue"];
 let gameseq=[];
@@ -16,7 +19,7 @@ body.addEventListener("keypress", function(){
 })
 
 function levelup(){
-    body.style.backgroundColor="black";
+    body.style.backgroundColor="#1e3850";
     userseq=[];
  level+=1;
  h2.innerText="LEVEL"+level;
@@ -78,6 +81,11 @@ function checkans(indx){
     }
 
     else{
+        if (level > highscore){
+        highscore = level; 
+        localStorage.setItem('simonHighScore', highscore); 
+        h22.innerText = `HIGH SCORE: ${highscore}`;
+        }
         h2.innerHTML=`GAME OVER YOUR SCORE IS:<b> ${level} </b><br>
          PRESS ANY KEY TO RESTART`;
          body.style.backgroundColor="red";
