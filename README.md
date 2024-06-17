@@ -26,7 +26,6 @@ The Pattern Memory Game is a web-based game designed to enhance memory and conce
 - **Visual Feedback**: Buttons flash when clicked, providing visual feedback to the player.
 
 ## Screenshot
-![Pattern Memory Game Screenshot](./PATTERNMEMORYGAME.png)
-
+![Screenshot 2024-06-17 205726](https://github.com/KUNALCHOURE/PATTERN-MEMORY-GAME/assets/147177836/1ec437ae-280f-4054-a928-00c1c62d12b6)
 ## Access the Game
 You can play the Pattern Memory Game by visiting the following link: [Pattern Memory Game](https://kunalchoure.github.io/PATTERN-MEMORY-GAME/)
