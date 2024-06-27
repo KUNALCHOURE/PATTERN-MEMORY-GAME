@@ -9,9 +9,9 @@ let gameseq=[];
 let userseq=[];
 let level=0;
 body.addEventListener("keypress", function(){
-     console.log("keypresed");
+    
     if(started==false){
-        console.log("GAMESTARTED");   
+          
         started=true;
         levelup();
 
@@ -21,15 +21,12 @@ body.addEventListener("keypress", function(){
 function levelup(){
     body.style.backgroundColor="#1e3850";
     userseq=[];
- level+=1;
+    level+=1;
  h2.innerText="LEVEL"+level;
-
  let randomindx=Math.floor(Math.random()*4);
  let randomcolor=btns[randomindx];
  let randbtn=document.querySelector(`.${randomcolor}`);
- /*console.log(randbtn);*/
  gameseq.push(randomcolor);
- console.log(gameseq);
  btnflash(randbtn);
 
 }
@@ -37,7 +34,6 @@ function btnflash(btn){
     btn.classList.add("flash");
     setTimeout(function(){
         btn.classList.remove("flash");
-
     },500)
 
 }
@@ -48,19 +44,15 @@ for(let btn of allbtn){
 }
 
 function userclick(){
-    console.log("clicked");
     let btn=this;
-   
     userflash(btn);
    let color=btn.getAttribute("id");
    userseq.push(color);
- console.log(userseq);
 
 checkans(userseq.length-1);
 }
 
 function userflash(btn){
-   /* console.log(btn);*/
     btn.classList.add("userflash");
  setTimeout(function(){
     btn.classList.remove("userflash");
@@ -68,14 +60,10 @@ function userflash(btn){
 
 }
 
-function checkans(indx){
-    console.log("LEVEL"+level);
- 
+function checkans(indx){ 
     if(userseq[indx]==gameseq[indx]){
 
-
-        if(userseq.length==gameseq.length){
-           
+        if(userseq.length==gameseq.length){           
             setTimeout(levelup,1000);
         }
     }
